@@ -1,0 +1,41 @@
+body {
+    background-image: url('frame100.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.naglo {
+    text-align: center;
+}
+
+.photo {
+    display: block;
+}
+
+.container {
+    width: 50px;
+    height: 50px;
+    background-image: url('flame4.png');
+    display: inline-block;
+    background-size: cover;
+    opacity: 0;
+}
+
+.container:hover {
+    opacity: 1; /* Change opacity to 1 when hovering */
+    animation: blink 1s infinite; /* Continue the blink animation on hover */
+}
+
+#flame1 {
+    margin-left: 743px;
+    margin-top: 115px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
